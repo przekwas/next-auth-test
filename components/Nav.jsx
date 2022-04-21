@@ -29,9 +29,6 @@ export default function Nav() {
 			<NavLink exact className="nav-link" href="/login">
 				Login
 			</NavLink>
-			<NavLink exact className="nav-link" href="/protected">
-				Protected
-			</NavLink>
 		</nav>
 	);
 }

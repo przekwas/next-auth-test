@@ -7,7 +7,11 @@ export default function Home() {
 			<main className="container">
 				<section className="row justify-content-center">
 					<div className="col-md-12">
-						<h1 className="text-center">Home Page</h1>
+						{session ? (
+							<h1 className="text-center">Signed in as {session?.user.email}</h1>
+						) : (
+							<h1 className="text-center">Not Signed In</h1>
+						)}
 					</div>
 				</section>
 			</main>

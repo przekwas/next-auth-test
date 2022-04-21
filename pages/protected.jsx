@@ -6,13 +6,7 @@ export default function Protected() {
 	return (
 		<>
 			<Nav />
-			<main className="container">
-				<section className="row justify-content-center">
-					<div className="col-md-12">
-						<h1 className="text-center">Signed in as {session?.user.email}</h1>
-					</div>
-				</section>
-			</main>
+
 		</>
 	);
 }
