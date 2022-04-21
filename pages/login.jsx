@@ -3,9 +3,9 @@ import Nav from '../components/Nav';
 import Router from 'next/router';
 
 export default function Login() {
-	const { data: session, status } = useSession();
+	const { status } = useSession();
 
-	// logs 'unauthenticated' at firt
+	// logs 'loading and 'unauthenticated' at firt
 	// then 'loading' then 'authenticated' after clicking
 	// then re-routes
 	console.log(status);
