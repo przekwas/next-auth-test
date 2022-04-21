@@ -1,7 +1,14 @@
-import { signIn } from 'next-auth/react';
+import { signIn, useSession } from 'next-auth/react';
 import Nav from '../components/Nav';
+import Router from 'next/router'
 
 export default function Login() {
+	const { data: session } = useSession();
+
+	if (session && session.user.email) {
+		Router.push('/')
+	}
+
 	return (
 		<>
 			<Nav />
